@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Health Monitor Preferences" />
+    <com.atakmap.android.gui.PanListPreference
+        android:key="plugin_health_monitor_key_set_comm_device"
+        android:title="Set BLE device"
+        android:summary="Set the BLE monitor device"
+        android:dialogTitle="Set BLE device"
+        />
+    <com.atakmap.android.gui.PanPreference
+        android:key="plugin_health_monitor_key_refresh_comm_devices"
+        android:title="Refresh BLE devices"
+        android:summary="Refresh BLE device list" />
+
+</PreferenceScreen>
