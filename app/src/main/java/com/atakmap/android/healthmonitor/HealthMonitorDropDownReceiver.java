@@ -212,7 +212,7 @@ public class HealthMonitorDropDownReceiver extends DropDownReceiver implements
         };
         IntentFilter f = new IntentFilter();
         f.addAction("com.atakmap.app.civ.READ_HEART_RATE");
-        mapView.getContext().registerReceiver(gattUpdateReceiver, f);
+        mapView.getContext().registerReceiver(gattUpdateReceiver, f, Context.RECEIVER_EXPORTED);
 
         scan = templateView.findViewById(R.id.Scan);
 
